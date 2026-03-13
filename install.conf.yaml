@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+
+# Add symlinks here as you add dotfiles. Example:
+# - link:
+#     ~/.zshrc: zshrc
+#     ~/.gitconfig: gitconfig
+#     ~/.config/starship.toml: config/starship.toml
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
